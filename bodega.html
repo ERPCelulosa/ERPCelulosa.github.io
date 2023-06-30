@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodega</title>
+
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="Estilos/bootstrap.min.css" crossorigin="anonymous">
+   
+    
+
+</head>
+<body>
+    <div class="botones">
+        <div class="Bodegas">
+            <h1 class="text-center mb-5">Menu de Bodegas</h1>
+            
+
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <table class="table table-hover table-sm">
+                        <thead>
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Bodega</th>
+                            <th scope="col">Espacio Total (MT2)</th>
+                            <th scope="col">Espacio Ocupado (MT2)</th>
+                            <th scope="col">Espacio Disponible (MT2)</th>
+                            <th scope="col">Porcentaje de Ocupacion</th>
+                            <th scope="col">Plano de Acopio</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                            <td scope="row">1</td>
+                            <td>Norte</td>
+                            <td>84</td>
+                            <td>54</td>
+                            <td>30</td>
+                            <td>64,3%</td>
+                            <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">Ver Plano</button></td>
+                            </tr>
+                            <tr>
+                            <td scope="row">2</td>
+                            <td>Sur</td>
+                            <td>105</td>
+                            <td>80</td>
+                            <td>25</td>
+                            <td>76,2%</td>
+                            <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">Ver Plano</button></td>
+                            </tr>
+                            <tr>
+                            <td scope="row">3</td>
+                            <td>Cordillera</td>
+                            <td>105</td>
+                            <td>95</td>
+                            <td>10</td>
+                            <td>90,4%</td>
+                            <td><button type="button" class="btn btn-success w-100"  id="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">Ver Plano</button></td>
+                            </tr>
+                            <tr>
+                            <td scope="row">3</td>
+                            <td>Mar</td>
+                            <td>126</td>
+                            <td>126</td>
+                            <td>0</td>
+                            <td>100%</td>
+                            <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#exampleModal4">Ver Plano</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                </div>
+                        <div class="col-6 col-md-4"></div>
+                        <div class="col-6 col-md-4">
+                            <button type="button" class="btn btn-danger w-100" id="button" onclick="location.href='/seleccion.html'">Volver</button>
+                        </div>
+                        <div class="col-6 col-md-4"></div>
+                
+
+
+            </div>
+
+        </div>
+    </div>
+<!-- Button trigger modal -->
+<!-- Modal1 -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Plano de Acopio - BOD 1 NORTE</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <div class="plano row">
+                <div class="col-5 col-md-5">
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>                       
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6" style="background-color:darkcyan; color:aliceblue;">Lote 75000 - 120u</td>
+                         
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:darkcyan; color:aliceblue;">Lote 75000 - 120u</td>
+                        </tr>
+                        <tr>                            
+                            <td colspan="6" style="background-color:darkcyan; color:aliceblue;">Lote 75000 - 120u</td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <table class="table  table-hover table-sm">
+                        <thead>
+                        <tr>
+                            <td colspan="6" class="H2">PASILLO</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    </table>
+                    
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>                       
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6" style="background-color:orchid; color:darkslategrey;">Lote 85000 - 120u</td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:orchid; color:darkslategrey;">Lote 85000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:orchid; color:darkslategrey;">Lote 85000 - 120u</td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <table class="table table-hover table-sm">
+                        <thead>
+                        <tr>                          
+                            <td colspan="6" class="H2">PASILLO</td>                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    </table>
+                    
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>                       
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6" style="background-color:coral; color:darkslategrey;">Lote 7200 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:coral; color:darkslategrey;">Lote 7200 - 120u</td>
+                        </tr>   
+                    </tbody>
+                    </table>
+             
+                </div>
+                <div class="col-2 col-md-2"></div>
+                <div class="col-5 col-md-5">
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>
+                        <tr>
+                            <td colspan="6" style="background-color:coral; color:darkslategrey;">Lote 7200 - 120u</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6" style="background-color:gainsboro; color:darkslategrey;">Lote 9500 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="bg-success text-bg-light">LIBRE - 60u</td>
+                            <td colspan="3" style="background-color:gainsboro; color:darkslategrey;">Lote 9500 - 60u</td>
+                            
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-success text-bg-light">LIBRE - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-success text-bg-light">LIBRE - 120u</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-hover table-sm">
+                    <thead>
+                    <tr>                          
+                        <td colspan="6" class="H2">PASILLO</td>                           
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                </table>
+                <table class="table table-bordered border-primary table-hover table-sm">
+                    <thead>                       
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="6" class="bg-success text-bg-light">LIBRE - 120u</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="bg-success text-bg-light">LIBRE - 120u</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="bg-success text-bg-light">LIBRE - 120u</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="bg-success text-bg-light">LIBRE - 120u</td>
+                    </tr>
+
+                </tbody>
+                </table>
+                    
+                       
+                </div>
+                
+            </div>
+            <hr>
+            <h4 class="text-center">Lote 75000 - 360 Unit en Total</h4>
+            <h4 class="text-center">Lote 85000 - 360 Unit en Total</h4>
+            <h4 class="text-center">Lote 7200 - 360 Unit en Total</h4>
+            <h4 class="text-center">Lote 9500 - 280 Unit en Total</h4>
+           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal2 -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Plano de Acopio - BOD 2 SUR</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <div class="plano row">
+                <div class="col-5 col-md-5">
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>                       
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6" class="bg-success text-bg-light">LIBRE - 120u</td>
+                         
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-success text-bg-light">LIBRE - 120u</td>
+                        </tr>
+                        <tr>                            
+                            <td colspan="6" class="bg-success text-bg-light">LIBRE - 120u</td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <table class="table  table-hover table-sm">
+                        <thead>
+                        <tr>
+                            <td colspan="6" class="H2">PASILLO</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    </table>
+                    
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>                       
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6" style="background-color:crimson; color:white;">Lote 45000 - 120u</td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:crimson; color:white;">Lote 45000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:crimson; color:white;">Lote 45000 - 120u</td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <table class="table table-hover table-sm">
+                        <thead>
+                        <tr>                          
+                            <td colspan="6" class="H2">PASILLO</td>                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    </table>
+                    
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>                       
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6" style="background-color:crimson; color:white;">Lote 45000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:royalblue; color:white;">Lote 56000 - 120u</td>
+                        </tr>
+                    </tbody>
+                    </table>
+             
+                </div>
+                <div class="col-2 col-md-2"></div>
+                <div class="col-5 col-md-5">
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>
+                        <tr>
+                            <td colspan="6" class="bg-success text-bg-light">LIBRE - 120u</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" style="background-color:royalblue; color:white;">Lote 56000 - 60u</td>
+                            <td colspan="3" class="bg-warning text-bg-light">Lote 65000 - 60u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="background-color:royalblue; color:white;">Lote 56000 - 60u</td>
+                            <td colspan="6" class="bg-warning text-bg-light">Lote 65000 - 60u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-warning text-bg-light">Lote 65000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-warning text-bg-light">Lote 65000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-warning text-bg-light">Lote 65000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:gainsboro; color:darkslategrey;">Lote 9500 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:gainsboro; color:darkslategrey;">Lote 9500 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:royalblue; color:white;">Lote 56000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:royalblue; color:white;">Lote 56000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-success text-bg-light">LIBRE - 120u</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <h4 class="text-center">Lote 45000 - 480 Unit en Total</h4>
+            <h4 class="text-center">Lote 56000 - 360 Unit en Total</h4>
+            <h4 class="text-center">Lote 65000 - 600 Unit en Total</h4>
+            <h4 class="text-center">Lote 9500 - 240 Unit en Total</h4>
+           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal3 -->
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Plano de Acopio - BOD 3 Cordillera</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <div class="plano row">
+                <div class="col-5 col-md-5">
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>                       
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6" class="bg-success text-bg-light">LIBRE - 120u</td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-success text-bg-light">LIBRE - 120u</td>
+                        </tr>
+                        <tr>                            
+                            <td colspan="6" class="bg-danger text-bg-dark">Lote 9000 - 120u</td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <table class="table  table-hover table-sm">
+                        <thead>
+                        <tr>
+                            <td colspan="6" class="H2">PASILLO</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    </table>
+                    
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>                       
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6" class="bg-danger text-bg-dark">Lote 9000 - 120u</td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-danger text-bg-dark">Lote 9000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-danger text-bg-dark">Lote 9000 - 120u</td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <table class="table table-hover table-sm">
+                        <thead>
+                        <tr>                          
+                            <td colspan="6" class="H2">PASILLO</td>                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    </table>
+                    
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>                       
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6" class="bg-danger text-bg-dark">Lote 9000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-info text-bg-dark">Lote 6000 - 120u</td>
+                        </tr>
+                    
+                    </tbody>
+                    </table>
+             
+                </div>
+                <div class="col-2 col-md-2"></div>
+                <div class="col-5 col-md-5">
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>
+                        <tr>
+                            <td colspan="6" style="background-color:deeppink; color:white;">Lote 25000 - 120u</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6" style="background-color:deeppink; color:white;">Lote 25000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:deeppink; color:white;">Lote 25000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:deeppink; color:white;">Lote 25000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:deeppink; color:white;">Lote 25000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:gold; color:darkslategrey;">Lote 35000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:gold; color:darkslategrey;">Lote 35000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:gold; color:darkslategrey;">Lote 35000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:gold; color:darkslategrey;">Lote 35000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:gold; color:darkslategrey;">Lote 35000 - 120u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:gold; color:darkslategrey;">Lote 35000 - 120u</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <h4 class="text-center">Lote 9000 - 600 Unit en Total</h4>
+            <h4 class="text-center">Lote 6000 - 120 Unit en Total</h4>
+            <h4 class="text-center">Lote 25000 - 600 Unit en Total</h4>
+            <h4 class="text-center">Lote 35000 - 720 Unit en Total</h4>
+           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!-- Modal4 -->
+  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Plano de Acopio - BOD 4 Mar</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <div class="plano row">
+                <div class="col-5 col-md-5">
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>                       
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6" class="bg-info text-bg-dark">Lote 6000 - 150u</td>
+                         
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-info text-bg-dark">Lote 6000 - 150u</td>
+                        </tr>
+                        <tr>                            
+                            <td colspan="6" class="bg-info text-bg-dark">Lote 6000 - 150u</td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <table class="table  table-hover table-sm">
+                        <thead>
+                        <tr>
+                            <td colspan="6" class="H2">PASILLO</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    </table>
+                    
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>                       
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6" class="bg-warning text-bg-light">Lote 7000 - 150u</td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-warning text-bg-light">Lote 7000 - 150u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-warning text-bg-light">Lote 7000 - 150u</td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <table class="table table-hover table-sm">
+                        <thead>
+                        <tr>                          
+                            <td colspan="6" class="H2">PASILLO</td>                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    </table>
+                    
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>                       
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6" class="bg-warning text-bg-light">Lote 7000 - 150u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-warning text-bg-light">Lote 7000 - 150u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-warning text-bg-light">Lote 7000 - 150u</td>
+                        </tr>
+                    </tbody>
+                    </table>
+             
+                </div>
+                <div class="col-2 col-md-2"></div>
+                <div class="col-5 col-md-5">
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>
+                        <tr>
+                            <td colspan="6" class="bg-danger text-bg-dark">Lote 8000 - 150u</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td colspan="6" class="bg-danger text-bg-dark">Lote 8000 - 150u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-danger text-bg-dark">Lote 8000 - 150u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="bg-danger text-bg-dark">Lote 8000 - 150u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:slateblue; color:paleturquoise;" >Lote 8500 - 150u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:slateblue; color:paleturquoise;">Lote 8500 - 150u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:slateblue; color:paleturquoise;">Lote 8500 - 150u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:slateblue; color:paleturquoise;">Lote 8500 - 150u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:teal; color:paleturquoise;">Lote 6500 - 150u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:teal; color:paleturquoise;">Lote 6500 - 150u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:teal; color:paleturquoise;">Lote 6500 - 150u</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="background-color:teal; color:paleturquoise;">Lote 6500 - 150u</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <h4 class="text-center">Lote 6000 - 450 Unit en Total</h4>
+            <h4 class="text-center">Lote 7000 - 900 Unit en Total</h4>
+            <h4 class="text-center">Lote 8000 - 600 Unit en Total</h4>
+            <h4 class="text-center">Lote 8500 - 600 Unit en Total</h4>
+            <h4 class="text-center">Lote 6500 - 600 Unit en Total</h4>
+           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+   
+    <script src="/JS/main.js"></script>
+    <script src="/JS/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+</body>
+</html>

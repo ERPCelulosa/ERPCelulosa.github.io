@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit</title>
+
+    
+    <link rel="stylesheet" href="Estilos/bootstrap.min.css" crossorigin="anonymous">
+    
+
+</head>
+<body>
+    <div class="container-fluid vh-100 mx-auto">
+        <div class="unit">
+            <h1 class="text-center mb-5 mt-5" style="font-size: 36px">Menu de Unit</h1>
+
+
+            <div class="row mb-10">
+                <div class="col-7 col-md-7">
+                </div>
+                <div class="col-2 col-md-2">
+                <button type="button" class="btn btn-success text-bg-dark w-100" id="button" data-bs-toggle="modal" data-bs-target="#ModalAgregarUnit">Recepcionar Unit</button>
+                </div>
+                <div class="col-3 col-md-3">
+            </div>
+            
+
+            <div class="row mt-5">
+                <div class="col-2 col-md-2"></div>
+                <div class="col-8 col-md-8">
+                    <table class="table table-hover table-sm">
+                        <thead>
+                            <tr>
+                            <th scope="col" class="">Cliente</th>
+                            <th scope="col">Lote</th>
+                            <th scope="col">Unit</th>
+                            <th scope="col">Fardos</th>
+                            <th scope="col">Estado y Stock por BOD</th>
+                            <th scope="col">Movimientos</th>
+                            <th scope="col">Modificar</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider" id="tablita">
+                            <tr>
+                                <td scope="row">Cliente 1</td>
+                                <td>6000</td>
+                                <td>570</td>
+                                <td>4560</td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#ModalEstadoStock">Ver Estado y Stock</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#ModalMovimientos">Ver Movimientos</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#ModalModificar">Modificar</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Cliente 1</td>
+                                <td>6500</td>
+                                <td>600</td>
+                                <td>4800</td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#ModalEstadoStock2">Ver Estado y Stock</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#ModalMovimientos2">Ver Movimientos</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#ModalModificar">Modificar</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Cliente 1</td>
+                                <td>7000</td>
+                                <td>900</td>
+                                <td>7200</td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#ModalEstadoStock3">Ver Estado y Stock</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#ModalMovimientos3">Ver Movimientos</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#ModalModificar">Modificar</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Cliente 1</td>
+                                <td>7200</td>
+                                <td>360</td>
+                                <td>2880</td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#ModalEstadoStock">Ver Estado y Stock</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#ModalMovimientos">Ver Movimientos</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#ModalModificar">Modificar</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Cliente 1</td>
+                                <td>8000</td>
+                                <td>600</td>
+                                <td>4800</td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#ModalEstadoStock">Ver Estado y Stock</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#ModalMovimientos">Ver Movimientos</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" data-bs-toggle="modal" data-bs-target="#ModalModificar">Modificar</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Cliente 1</td>
+                                <td>8500</td>
+                                <td>600</td>
+                                <td>4800</td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Estado y Stock</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Movimientos</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Modificar</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Cliente 1</td>
+                                <td>9000</td>
+                                <td>600</td>
+                                <td>4800</td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Estado y Stock</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Movimientos</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Modificar</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Cliente 1</td>
+                                <td>9500</td>
+                                <td>520</td>
+                                <td>4160</td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Estado y Stock</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Movimientos</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Modificar</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Cliente 2</td>
+                                <td>25000</td>
+                                <td>600</td>
+                                <td>4800</td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Estado y Stock</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Movimientos</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Modificar</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Cliente 2</td>
+                                <td>35000</td>
+                                <td>720</td>
+                                <td>5760</td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Estado y Stock</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Movimientos</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Modificar</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Cliente 2</td>
+                                <td>45000</td>
+                                <td>480</td>
+                                <td>3840</td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Estado y Stock</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Movimientos</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Modificar</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Cliente 2</td>
+                                <td>56000</td>
+                                <td>360</td>
+                                <td>2880</td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Estado y Stock</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Movimientos</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Modificar</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Cliente 2</td>
+                                <td>65000</td>
+                                <td>600</td>
+                                <td>4800</td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Estado y Stock</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Movimientos</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Modificar</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Cliente 2</td>
+                                <td>75000</td>
+                                <td>360</td>
+                                <td>2880</td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Estado y Stock</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Movimientos</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Modificar</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Cliente 2</td>
+                                <td>85000</td>
+                                <td>360</td>
+                                <td>2880</td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Estado y Stock</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Ver Movimientos</button></td>
+                                <td><button type="button" class="btn btn-success w-100" id="button" >Modificar</button></td>
+                            </tr>
+                          
+                        </tbody>
+                    </table>
+                
+                </div>
+                <div class="col-2 col-md-2 mb-5"></div>
+                        <div class="col-6 col-md-4"></div>
+                        <div class="col-6 col-md-4">
+                            <button type="button" class="btn btn-danger w-100 mb-5" id="button" onclick="location.href='/seleccion.html'">Volver</button>
+                        </div>
+                        <div class="col-6 col-md-4"></div>
+                
+
+
+            </div>
+
+        </div>
+        <br>
+    </div>
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="ModalAgregarUnit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Recepcionar Unit</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <div class="plano row">
+                <div class="col-12 col-md-12">
+
+                    <div class="input-group">
+                        <span class="input-group-text">Cliente</span>
+                   
+                          <select class="form-select" aria-label="Default select example" id="cliente">
+                            <option selected>Seleccione</option>
+                            <option value="Cliente 1">Cliente 1</option>
+                            <option value="Cliente 2">Cliente 2</option>
+                          </select>  
+      
+                          <span class="input-group-text">Lote</span>
+                          <input type="text" aria-label="Ingrese" class="form-control bg-light" placeholder="Ingrese" id="lote">
+                      </div> 
+                          
+       
+                    </div>        
+                            
+            </div>
+            <div class="plano row mt-4">
+                <div class="col-12 col-md-12">
+
+                    <div class="input-group">
+                        <span class="input-group-text">Transporte</span>
+                   
+                          <select class="form-select" aria-label="Default select example" id="transporte">
+                            <option selected>Seleccione</option>
+                            <option value="Tren">Tren</option>
+                            <option value="Camion">Camión</option>
+                          </select>  
+                          <span class="input-group-text">Bodega</span>
+                   
+                          <select class="form-select" aria-label="Default select example" id="bodega">
+                            <option selected>Seleccione</option>
+                            <option value="Bodega 1">Bodega 1 - Norte</option>
+                            <option value="Bodega 2">Bodega 2 - Sur</option>
+                            <option value="Bodega 3">Bodega 3 - Cordillera</option>
+                            <option value="Bodega 4" disabled>Bodega 4 - Mar</option>
+                          </select>  
+                          
+                          <span class="input-group-text">Cantidad</span>
+                          <input type="text" aria-label="Ingrese" class="form-control bg-light" placeholder="Ingrese" id="cantidad">
+                      </div> 
+                          
+       
+                    </div>        
+                            
+            </div>
+            <div class="plano row mt-4">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-danger w-100 " id="addunit" >Recepcionar</button>
+                  </div>
+                <div class="col-4"></div>      
+                            
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="ModalEstadoStock" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Estado y Stock por Bodega</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <div class="plano row">
+                <div class="col-5 col-md-5">
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>    
+                                <th class="bg-info text-bg-light">Estado</th>
+                                <th class="bg-info text-bg-light">Unit</th>           
+                        </thead>
+                    <tbody>
+                        <tr>
+                            <td>Unit Disponibles</td>
+                            <td>570</td>                     
+                        </tr>
+                        <tr>
+                            <td>Unit Consolidados</td>
+                            <td>260</td>                     
+                        </tr>
+                        <tr>                            
+                            <td>Unit Dañados</td>
+                            <td>0</td> 
+                        </tr>
+                    </tbody>
+                    </table>
+
+                </div>
+                <div class="col-2 col-md-2"></div>
+                <div class="col-5 col-md-5">
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>    
+                                <th class="bg-danger text-bg-light">#</th>
+                                <th class="bg-danger text-bg-light">Bodega</th>
+                                <th class="bg-danger text-bg-light">Unit</th>           
+                        </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Norte</td>
+                            <td>0</td>                     
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Sur</td>
+                            <td>0</td>                     
+                        </tr>
+                        <tr>     
+                            <td>3</td>                       
+                            <td>Cordillera</td>
+                            <td>120</td> 
+                        </tr>
+                        <tr>       
+                            <td>4</td>                     
+                            <td>Mar</td>
+                            <td>450</td> 
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <td></td>
+                        <td>Total</td>
+                        <td>570</td>
+                      </tfoot>
+                    
+                    </table>
+                </div>
+            </div>
+
+           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ModalMovimientos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Historial de Movimientos</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <div class="plano row">
+                <div class="col-12 col-md-12">
+
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-lg-4 col-sm-4">
+                            <label for="startDate">Fecha Inicio</label>
+                            <input id="startDate" class="form-control" type="date" />
+                            <span id="startDateSelected"></span>
+                        </div>
+                        <div class="col-lg-4 col-sm-4">
+                            <label for="endDate">Fecha Termino</label>
+                            <input id="endDate" class="form-control" type="date" />
+                            <span id="endDateSelected"></span>
+                        </div>
+                        <div class="col-2">
+                            <button type="button" class="btn btn-danger w-100 mb-5" id="button" >Filtrar</button>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-1 ">
+                                
+                                </div>
+                            <div class="col-5 ">
+                                <h5 class="text-center">Entradas</h5>
+                                <table class="table table-bordered border-primary table-hover table-sm">
+                                    <thead>    
+                                            <th class="bg-info text-bg-light">Cantidad</th>
+                                            <th class="bg-info text-bg-light">Transporte</th>   
+                                            <th class="bg-info text-bg-light">Fecha</th>         
+                                            <th class="bg-info text-bg-light">Hora</th>   
+                                    </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>136</td>
+                                        <td>Camion</td>
+                                        <td>16/06/2023</td>
+                                        <td>23:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>170</td>
+                                        <td>Camion</td>
+                                        <td>14/06/2023</td>
+                                        <td>16:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>450</td>
+                                        <td>Tren</td>
+                                        <td>10/06/2023</td>
+                                        <td>11:00</td>
+                                    </tr>
+                                
+                                </tbody>
+                                </table>
+                            </div>
+                           
+
+                            <div class="col-5">
+                                <h5 class="text-center">Salidas</h5>
+                                <table class="table table-bordered border-primary table-hover table-sm">
+                                    <thead>    
+                                            <th class="bg-info text-bg-light">Cantidad</th>
+                                            <th class="bg-info text-bg-light">Nave</th>   
+                                            <th class="bg-info text-bg-light">Fecha</th>         
+                                            <th class="bg-info text-bg-light">Hora</th>          
+                                    </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>65</td>
+                                        <td>Nave 1</td>
+                                        <td>17/06/2023</td>
+                                        <td>16:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>121</td>
+                                        <td>Nave 1</td>
+                                        <td>17/06/2023</td>
+                                        <td>10:00</td>
+                                    </tr>
+
+                                </tbody>
+                                </table>
+                            </div>
+                            <div class="col-1 ">
+                                
+                            </div>
+
+                            </div>
+                    </div>
+                </div>
+                    
+             
+                
+               
+                   
+                
+            
+
+           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ModalModificar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Formulario de cambios</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <div class="plano row">
+                <div class="col-12 col-md-12">
+
+                    <div class="input-group">
+                        <span class="input-group-text">Cliente</span>
+                   
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione</option>
+                            <option value="1">Cliente 1</option>
+                            <option value="2">Cliente 2</option>
+                          </select>  
+      
+                          <span class="input-group-text">Lote</span>
+                          <input type="text" aria-label="Ingrese" class="form-control bg-light" placeholder="Ingrese">
+
+                          <span class="input-group-text">Cantidad</span>
+                          <input type="text" aria-label="Ingrese" class="form-control bg-light" placeholder="Ingrese">
+                       
+                          
+                          
+                      </div>               
+                    </div>          
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-danger w-100 " id="button" onclick="location.href='/seleccion.html'">Guardar cambios</button>
+                      </div>
+                    <div class="col-4"></div>
+            </div>      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="ModalEstadoStock2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Estado y Stock por Bodega</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <div class="plano row">
+                <div class="col-5 col-md-5">
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>    
+                                <th class="bg-info text-bg-light">Estado</th>
+                                <th class="bg-info text-bg-light">Unit</th>           
+                        </thead>
+                    <tbody>
+                        <tr>
+                            <td>Unit Disponibles</td>
+                            <td>600</td>                     
+                        </tr>
+                        <tr>
+                            <td>Unit Consolidados</td>
+                            <td>65</td>                     
+                        </tr>
+                        <tr>                            
+                            <td>Unit Dañados</td>
+                            <td>0</td> 
+                        </tr>
+                    </tbody>
+                    </table>
+
+                </div>
+                <div class="col-2 col-md-2"></div>
+                <div class="col-5 col-md-5">
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>    
+                                <th class="bg-danger text-bg-light">#</th>
+                                <th class="bg-danger text-bg-light">Bodega</th>
+                                <th class="bg-danger text-bg-light">Unit</th>           
+                        </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Norte</td>
+                            <td>0</td>                     
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Sur</td>
+                            <td>0</td>                     
+                        </tr>
+                        <tr>     
+                            <td>3</td>                       
+                            <td>Cordillera</td>
+                            <td>0</td> 
+                        </tr>
+                        <tr>       
+                            <td>4</td>                     
+                            <td>Mar</td>
+                            <td>600</td> 
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <td></td>
+                        <td>Total</td>
+                        <td>600</td>
+                      </tfoot>
+                    
+                    </table>
+                </div>
+            </div>
+
+           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ModalMovimientos2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Historial de Movimientos</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <div class="plano row">
+                <div class="col-12 col-md-12">
+
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-lg-4 col-sm-4">
+                            <label for="startDate">Fecha Inicio</label>
+                            <input id="startDate" class="form-control" type="date" />
+                            <span id="startDateSelected"></span>
+                        </div>
+                        <div class="col-lg-4 col-sm-4">
+                            <label for="endDate">Fecha Termino</label>
+                            <input id="endDate" class="form-control" type="date" />
+                            <span id="endDateSelected"></span>
+                        </div>
+                        <div class="col-2">
+                            <button type="button" class="btn btn-danger w-100 mb-5" id="button" >Filtrar</button>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-1 ">
+                                
+                                </div>
+                            <div class="col-5 ">
+                                <h5 class="text-center">Entradas</h5>
+                                <table class="table table-bordered border-primary table-hover table-sm">
+                                    <thead>    
+                                            <th class="bg-info text-bg-light">Cantidad</th>
+                                            <th class="bg-info text-bg-light">Transporte</th>   
+                                            <th class="bg-info text-bg-light">Fecha</th>         
+                                            <th class="bg-info text-bg-light">Hora</th>   
+                                    </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>215</td>
+                                        <td>Tren</td>
+                                        <td>13/06/2023</td>
+                                        <td>23:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>450</td>
+                                        <td>Tren</td>
+                                        <td>08/06/2023</td>
+                                        <td>11:00</td>
+                                    </tr>
+                                    <tr>
+                                        
+                                    </tr>
+                                
+                                </tbody>
+                                </table>
+                            </div>
+                           
+
+                            <div class="col-5">
+                                <h5 class="text-center">Salidas</h5>
+                                <table class="table table-bordered border-primary table-hover table-sm">
+                                    <thead>    
+                                            <th class="bg-info text-bg-light">Cantidad</th>
+                                            <th class="bg-info text-bg-light">Nave</th>   
+                                            <th class="bg-info text-bg-light">Fecha</th>         
+                                            <th class="bg-info text-bg-light">Hora</th>          
+                                    </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>65</td>
+                                        <td>Nave 2</td>
+                                        <td>16/06/2023</td>
+                                        <td>16:00</td>
+                                    </tr>
+                               
+
+                                </tbody>
+                                </table>
+                            </div>
+                            <div class="col-1 ">
+                                
+                            </div>
+
+                            </div>
+                    </div>
+                </div>
+                    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ModalEstadoStock3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Estado y Stock por Bodega</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <div class="plano row">
+                <div class="col-5 col-md-5">
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>    
+                                <th class="bg-info text-bg-light">Estado</th>
+                                <th class="bg-info text-bg-light">Unit</th>           
+                        </thead>
+                    <tbody>
+                        <tr>
+                            <td>Unit Disponibles</td>
+                            <td>900</td>                     
+                        </tr>
+                        <tr>
+                            <td>Unit Consolidados</td>
+                            <td>0</td>                     
+                        </tr>
+                        <tr>                            
+                            <td>Unit Dañados</td>
+                            <td>0</td> 
+                        </tr>
+                    </tbody>
+                    </table>
+
+                </div>
+                <div class="col-2 col-md-2"></div>
+                <div class="col-5 col-md-5">
+                    <table class="table table-bordered border-primary table-hover table-sm">
+                        <thead>    
+                                <th class="bg-danger text-bg-light">#</th>
+                                <th class="bg-danger text-bg-light">Bodega</th>
+                                <th class="bg-danger text-bg-light">Unit</th>           
+                        </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Norte</td>
+                            <td>0</td>                     
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Sur</td>
+                            <td>0</td>                     
+                        </tr>
+                        <tr>     
+                            <td>3</td>                       
+                            <td>Cordillera</td>
+                            <td>0</td> 
+                        </tr>
+                        <tr>       
+                            <td>4</td>                     
+                            <td>Mar</td>
+                            <td>900</td> 
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <td></td>
+                        <td>Total</td>
+                        <td>900</td>
+                      </tfoot>
+                    
+                    </table>
+                </div>
+            </div>
+
+           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ModalMovimientos3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Historial de Movimientos</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <div class="plano row">
+                <div class="col-12 col-md-12">
+
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-lg-4 col-sm-4">
+                            <label for="startDate">Fecha Inicio</label>
+                            <input id="startDate" class="form-control" type="date" />
+                            <span id="startDateSelected"></span>
+                        </div>
+                        <div class="col-lg-4 col-sm-4">
+                            <label for="endDate">Fecha Termino</label>
+                            <input id="endDate" class="form-control" type="date" />
+                            <span id="endDateSelected"></span>
+                        </div>
+                        <div class="col-2">
+                            <button type="button" class="btn btn-danger w-100 mb-5" id="button" >Filtrar</button>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-1 ">
+                                
+                                </div>
+                            <div class="col-5 ">
+                                <h5 class="text-center">Entradas</h5>
+                                <table class="table table-bordered border-primary table-hover table-sm">
+                                    <thead>    
+                                            <th class="bg-info text-bg-light">Cantidad</th>
+                                            <th class="bg-info text-bg-light">Transporte</th>   
+                                            <th class="bg-info text-bg-light">Fecha</th>         
+                                            <th class="bg-info text-bg-light">Hora</th>   
+                                    </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>250</td>
+                                        <td>Tren</td>
+                                        <td>17/06/2023</td>
+                                        <td>23:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>650</td>
+                                        <td>Tren</td>
+                                        <td>17/06/2023</td>
+                                        <td>16:00</td>
+                                    </tr>
+
+                                
+                                </tbody>
+                                </table>
+                            </div>
+                           
+
+                            <div class="col-5">
+                                <h5 class="text-center">Salidas</h5>
+                                <table class="table table-bordered border-primary table-hover table-sm">
+                                    <thead>    
+                                            <th class="bg-info text-bg-light">Cantidad</th>
+                                            <th class="bg-info text-bg-light">Nave</th>   
+                                            <th class="bg-info text-bg-light">Fecha</th>         
+                                            <th class="bg-info text-bg-light">Hora</th>          
+                                    </thead>
+                                <tbody>
+                  
+
+                                </tbody>
+                                </table>
+                            </div>
+                            <div class="col-1 ">
+                                
+                            </div>
+
+                            </div>
+                    </div>
+                </div>
+                    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    
+    
+    <script src="/JS/jquery-3.7.0.min.js"></script>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+   
+</body>
+</html>

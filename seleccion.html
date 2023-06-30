@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccion</title>
+
+    
+    <link rel="stylesheet" href="Estilos/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <div class="botones">
+        <div class="opciones">
+        <h1 class="text-center">Seleccione una opción</h1>
+
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <div class="card mt-5">
+                    <img src="/Recursos/bodega.png" class="mx-auto" width="40%" height="170px">
+                    <div class="card-body">
+                      <h5 class="card-title text-center h2">Bodegas</h5>
+                      <p class="card-text">Aqui podra ver el estado de las bodegas, tambien los planos de acopio.</p>
+                      <button type="button" class="btn w-100" style="background-color:darkorange; color: ivory;" id="button" onclick="location.href='/bodega.html'"> Ver Bodegas</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-md-2">
+
+            </div>
+            <div class="col-12 col-md-5">
+                <div class="card mt-5">
+                    <img src="/Recursos/unit.png" class="mx-auto" width="40%" height="170px">
+                    <div class="card-body">
+                      <h5 class="card-title text-center h2">Unit</h5>
+                      <p class="card-text">Aqui podra gestionar los lotes de unit, ingresar y ver el estado.</p>
+                      <button type="button" class="btn w-100" style="background-color:orchid; color:ivory;" id="button" onclick="location.href='/unit.html'"> Ver Units</button>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+        
+        
+        </div>
+    </div>
+
+
+    <script src="/JS/main.js"></script>
+    <script src="/JS/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+</body>
+</html>
